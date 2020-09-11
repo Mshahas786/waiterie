@@ -2,6 +2,7 @@
 @import "mixins";
 @import "reset";
 @import "typography";
+@import "containers";
 @import "button";
 @import "mobile";
 @import "desktop";
@@ -24,62 +25,84 @@
     margin-top: 10px;
     text-align: center;
   }
-  .ordernow_button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  button {
-    margin-top: 10px;
-    background-color: $primary;
-    color: $tertiary;
-    @include font($ff,20px,white);
-    padding: 10px 50px;
-    border-radius: 12px;
-  }
-  button:hover {
-    background-color: #4caf50;
-    color: $tertiary;
-  }
+  
 } // Welcome_page end !
 
-.home{
-    @include dimension(100%,100vh);
+.ordernow_button {
+  margin: auto;
+  margin-top: 10px;
+  @include font($ff, 20px, white);
+  padding: 10px 50px;
+
 }
 
-.search{
-    @include dimension(100%,100px);
-    background-color: $primary;
+button:hover {
+  background-color: #4caf50;
+  color: $tertiary;
+}
 
-    input[type=text] {
-        @include dimension(30%,auto);
-            float: right;
-            padding: 10px;
-            margin-top: 50px;
-            margin-right: 50px;
-            border: $primary;
-            border-radius: 12px;
-            font-size: 17px;
-          }
+
+
+
+.home {
+  @include dimension(100%, 100vh);
+}
+
+.head {
+  @include dimension(100%, 100px);
+  background-color: $primary;
+}
+
+.search input[type="text"] {
+  @include dimension(30%, auto);
+  float: right;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 50px;
+  border: $primary;
+  border-radius: 12px;
+  font-size: 17px;
+  border: 2px solid green;
 } //search end !
 
-.navbar{
-    @include dimension(800px,auto);
-    background-color:grey;
-    border-radius: 12px;
-    margin: auto;
-    margin-top: 75vh;
+.navbar {
+  @include dimension(768px, auto);
+  background-color: grey;
+  border-radius: 12px;
+  top: 90vh;
+  position: fixed;
 
-    li{
-        display: inline;
-        
-    }
+  li {
+    display: inline;
+  }
 }
 
 .icon_img {
-    width: 10%;
-    max-width: 80px;
-    margin: 10px 7.3%;
-  }
-  
+  width: 10%;
+  max-width: 40px;
+  margin: 10px 74.2px;
+}
 
+.heading_txt{
+  text-align: center;
+  padding-top: 40px;
+  letter-spacing: 2px;
+}
+
+.promotion_containers{
+  // @include dimension(80%, auto);
+  background-color: green;
+  margin: 10px 30px;
+  max-width: 70%;
+
+  .promotions{
+    @include dimension(49.8%,250px);
+    border: 2px solid yellow;
+    display: inline-block;
+    border-radius: 12px;
+  }
+}
+
+.menu_container{
+  @include dimension(100%, auto);
+}
