@@ -2,5 +2,6 @@ button{
     background-color: $primary;
     color: $tertiary;
     border-radius: 12px;
-    
+    @include font($ff, 20px, white);
+    margin: auto;
 }

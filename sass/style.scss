@@ -25,15 +25,11 @@
     margin-top: 10px;
     text-align: center;
   }
-  
 } // Welcome_page end !
 
 .ordernow_button {
-  margin: auto;
   margin-top: 10px;
-  @include font($ff, 20px, white);
   padding: 10px 50px;
-
 }
 
 button:hover {
@@ -41,11 +37,8 @@ button:hover {
   color: $tertiary;
 }
 
-
-
-
 .home {
-  @include dimension(100%, 100vh);
+  @include dimension(100%, auto);
 }
 
 .head {
@@ -65,7 +58,6 @@ button:hover {
   border: $primary;
   border-radius: 12px;
   font-size: 17px;
-  border: 2px solid green;
 } //search end !
 
 .navbar {
@@ -86,67 +78,112 @@ button:hover {
   margin: 10px 74.2px;
 }
 
-.heading_txt{
+.heading_txt {
   text-align: center;
   padding-top: 40px;
   letter-spacing: 2px;
 }
 
-
-
-.promotion_containers{
+.promotion_containers {
   @include dimension(77%, auto);
-  
-
   margin: 120px 0 0 20px;
   float: left;
 
-  .promotions{
-    @include dimension(49.8%,250px);
-    border: 2px solid yellow;
+  .promotions {
+    @include dimension(49.8%, auto);
     display: inline-block;
+    border-radius: 12px;
+  }
+  .promotion_img {
+    width: 100%;
+    height: auto;
     border-radius: 12px;
   }
 }
 
-
-
-
-.cart_container{
-  @include dimension(20%,70vh);
+.cart_container {
+  @include dimension(20%, 70vh);
   top: 120px;
   right: 20px;
   position: fixed;
   float: right;
-  background-color: red;
+  border-radius: 12px;
+  border: 2px solid red;
+
+  .paynow_button {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
-
-
-
-.menu_container{
+.menu_container {
   @include dimension(77%, auto);
   float: left;
-  margin: 10px 0px 0 20px; 
+  margin: 10px 0px 0 20px;
 }
 
-
-
+#filter_Container {
+  top: 100px;
+  position: sticky;
+  background-color: $bc;
+}
 
 .container {
   overflow: hidden;
-  background-color: yellow;
+  @include dimension(100%, auto);
+}
+.menu_item {
+  @include dimension(24%, auto);
+  float: left;
+  color: black;
+  background-color: white;
+  border-radius: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 1%;
+  margin-bottom: 1%;
+  display: none; /* Hidden by default */
 }
 
-.filterDiv {
+.menu_img_container {
+  @include dimension(40%, auto);
   float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 420px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
-  display: none; /* Hidden by default */
+}
+
+.description {
+  @include dimension(60%, auto);
+  max-height: 140px;
+  border: 1px solid red;
+  float: right;
+}
+
+.menu_item_heading {
+  font-family: $ff;
+  @include font($ff, 18px, black);
+}
+
+.menu_img {
+  width: 100%;
+  min-height: 140px;
+  border-radius: 12px;
+}
+
+.price{
+  color:black;
+  font-family: $ff;
+  font-size: 20px;
+  float: left;
+  margin: 5px;
+
+}
+
+.menu_add_button {
+  float: right;
+  margin: 5px;
+  padding: 5px 10px;
 }
 
 /* The "show" class is added to the filtered elements */
@@ -162,8 +199,7 @@ button:hover {
   outline: none;
   padding: 12px 16px;
   background-color: black;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 10px 20px 10px 0px;
   cursor: pointer;
 }
 
@@ -174,7 +210,6 @@ button:hover {
 
 /* Add a dark background to the active button */
 .btn.active {
-  background-color: #666;
+  background-color: $primary;
   color: white;
 }
-
