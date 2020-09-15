@@ -1,48 +1,46 @@
-$('.home').hide();
-
-
-
+$('#home').hide();
 
 
 $(document).ready(function () {
 
 
-    $('.ordernow_button').click(function () {
-        $('.home').show();
-        $('.menu_container').show();
-        $('.promotion_containers').show();
-        $('.Welcome_page').hide();
-        $('.cart_txt').hide();
-    });
+  $('.ordernow_button').click(function () {
+    $('#home').show();
+    $('#menu').show();
+    $('.promotions').show();
+    $('.cart_container').show();
+    $('.Welcome_page').hide();
+    $('.cart_txt').hide();
+  });
 
-    $('.profile').click(function () {
-        $('.home').hide();
-        $('.welcome_page').show();
+  $('.profile').click(function () {
+    $('#home').hide();
+    $('.welcome_page').show();
 
-    });
+  });
 
-    $('.cart').click(function () {
-        $('.search').hide();
-        $('.Welcome_page').hide();
-        $('.cart_txt').show();
+  $('.cart').click(function () {
+    $('.search').hide();
+    $('.Welcome_page').hide();
+    $('.cart_txt').show();
 
-    });
+  });
 
-    $('.menu').click(function () {
-        $('.search').show();
-        $('.Welcome_page').hide();
-        $('.cart_txt').hide();
+  $('.menu').click(function () {
+    $('.search').show();
+    $('.Welcome_page').hide();
+    $('.cart_txt').hide();
 
-    });
+  });
 
-    $('.favourite').click(function () {
-        $('.search').hide();
-        $('.Welcome_page').hide();
-        $('.cart_txt').hide();
+  $('.favourite').click(function () {
+    $('.search').hide();
+    $('.Welcome_page').hide();
+    $('.cart_txt').hide();
 
-    });
+  });
 
-  
+
 
 }); //end here
 
@@ -124,9 +122,67 @@ function RemoveClass(element, name) {
 var btnContainer = document.getElementById("filter_Container");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
+  btns[i].addEventListener("click", function () {
     var current = document.getElementsByClassName("active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
 }
+
+
+
+
+///////////////// cart section /////////////////////////////////////////////////////////////////////////
+
+console.log('js');
+
+// $('#cart').hide();
+
+var total = 0; //initializing the numeric variable
+
+$(document).ready(function () {
+
+
+  $('.item_add_button').on('click', function () {
+
+    //item name from id of button being clicked;
+    //this refers to what is being clicked
+
+    console.log(this.id);
+    // $('#items').append ('<br>' + this.id)
+    var itemName = this.id; //storing the value to a variable
+    $('#items').append('<br>' + itemName);
+
+    // console.log($('.menu-button').index(this));
+    var myIndex = $('.item_add_button').index(this);
+    console.log(myIndex);
+
+    var itemPrice = document.getElementsByClassName('itemPrice');
+    console.log(itemPrice);
+    console.log(itemPrice.length);
+
+    //searching or matching
+    for (var i = 0; i < itemPrice.length; i++) {
+      // console.log(itemPrice[i].innerHTML);
+      if (myIndex == i) {
+        // console.log('yes');//
+        console.log(itemPrice[i].innerHTML);
+        var price = itemPrice[i].innerHTML;
+        $('#price').append('<br>' + price);
+        total += parseFloat(price);
+        console.log(total);
+      } //if ends
+    } //for loop ends
+
+  }); //.menu-button
+  $('#cartIcon').click(function () {
+    console.log('clicked');
+    $('#cart').show();
+    $('#menu').hide();
+  });
+
+  $('#calculate').on('click', function () {
+    document.getElementById('amount').innerHTML = '$' + total.toFixed(2);
+  });
+
+});//document.ready() ends

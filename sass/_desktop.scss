@@ -1,0 +1,17 @@
+@media screen and (min-width: 1026px) {
+  .promotions {
+    @include dimension(77%, auto);
+    margin: 120px 0 0 20px;
+
+    .promotion {
+      @include dimension(49.8%, auto);
+      display: inline-block;
+      border-radius: 12px;
+    }
+    .promotion_img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+  }
+}

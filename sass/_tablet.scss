@@ -1,0 +1,25 @@
+@media screen and (max-width: 1025px) {
+  #cart {
+    display: none;
+  }
+
+  .one{
+      display: none;
+  }
+
+  .search input[type="text"] {
+    @include dimension(50%, auto);
+    background-color: blue;
+  }
+
+  .promotions {
+    @include dimension(100%, auto);
+    margin: 100px 0 0 0;
+  }
+
+  #menu {
+    @include dimension(80%, auto);
+    margin: 10px 0px 0 0;
+    margin: auto;
+  }
+} /////media screen end here
