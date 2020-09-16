@@ -1,0 +1,43 @@
+
+#cart{
+    position: relative;
+}
+.cart {
+  @include dimension(90%,75vh);
+  margin: auto;
+  margin-top: 120px;
+  border-radius: 12px;
+  background-color: white;
+}
+  .paynow_button {
+    background-color: red;
+    width: 100%;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }
+
+
+.item-price_container{
+    width: 90%;
+    margin-top: 50px;
+    margin: auto;
+
+
+.items{
+    background-color: blue;
+}
+
+.price{
+    background-color: blue;
+}
+
+}
+
+.totalAmount{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 1px solid green;
+}

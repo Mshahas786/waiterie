@@ -1,0 +1,22 @@
+
+.navbar {
+    @include dimension(100%,auto);
+    background-color:white;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    
+
+    .navbar_icons{
+        // border: 1px solid green;
+        text-align: center;
+        padding:10px 10px;
+    }
+
+    .icon_img {
+        width: 50%;
+        height: auto;
+        // border: 1px solid red;
+      }
+  } ///////navbar end here

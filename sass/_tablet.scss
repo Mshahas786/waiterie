@@ -1,25 +1,47 @@
-@media screen and (max-width: 1025px) {
+@media screen and (min-width: 426px) and (max-width: 1025px) {
   #cart {
-    display: none;
+    @include dimension(70%,75vh);
+  }
+  .menu_item {
+    @include dimension(49%, auto);
   }
 
-  .one{
-      display: none;
-  }
 
-  .search input[type="text"] {
-    @include dimension(50%, auto);
-    background-color: blue;
-  }
 
-  .promotions {
-    @include dimension(100%, auto);
-    margin: 100px 0 0 0;
+  .col-sm-1 {
+    width: 100%/12 * 1;
   }
-
-  #menu {
-    @include dimension(80%, auto);
-    margin: 10px 0px 0 0;
-    margin: auto;
+  .col-sm-2 {
+    width: 100%/12 * 2;
+  }
+  .col-sm-3 {
+    width: 100%/12 * 3;
+  }
+  .col-sm-4 {
+    width: 100%/12 * 4;
+  }
+  .col-sm-5 {
+    width: 100%/12 * 5;
+  }
+  .col-sm-6 {
+    width: 100%/12 * 6;
+  }
+  .col-sm-7 {
+    width: 100%/12 * 7;
+  }
+  .col-sm-8 {
+    width: 100%/12 * 8;
+  }
+  .col-sm-9 {
+    width: 100%/12 * 9;
+  }
+  .col-sm-10 {
+    width: 100%/12 * 10;
+  }
+  .col-sm-11 {
+    width: 100%/12 * 11;
+  }
+  .col-sm-12 {
+    width: 100%/12 * 12;
   }
 } /////media screen end here

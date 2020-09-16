@@ -1,0 +1,68 @@
+.Welcome_page {
+    background-image: url("/images/welcome_background.jpg");
+    @include dimension(100%, 100vh);
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    .logo {
+      display: flex;
+      justify-content: center;
+      padding-top: 25vh;
+    }
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      margin-top: 10px;
+      text-align: center;
+    }
+  
+    .ordernow_button {
+        margin-top: 10px;
+        padding: 10px 50px;
+      }
+  
+      button:hover {
+        background-color: #4caf50;
+        color: $tertiary;
+      }
+  
+  } // Welcome_page end !
+
+  
+  .head {
+    @include dimension(100%, 100px);
+    background-color: $primary;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+  }
+
+  .search_bar {
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 17px;
+  }
+
+  
+
+
+
+  
+ 
+  
+  .heading_txt {
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: 2px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  

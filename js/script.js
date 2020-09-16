@@ -7,10 +7,11 @@ $(document).ready(function () {
   $('.ordernow_button').click(function () {
     $('#home').show();
     $('#menu').show();
-    $('.promotions').show();
+    $('#promotions').show();
     $('.cart_container').show();
     $('.Welcome_page').hide();
     $('.cart_txt').hide();
+    $('#cart').hide();
   });
 
   $('.profile').click(function () {
@@ -19,10 +20,13 @@ $(document).ready(function () {
 
   });
 
-  $('.cart').click(function () {
-    $('.search').hide();
+  $('.cart_btn').click(function () {
+    $('.search_bar').hide();
     $('.Welcome_page').hide();
+    $('#menu').hide();
+    $('#promotions').hide();
     $('.cart_txt').show();
+    $('#cart').show();
 
   });
 
