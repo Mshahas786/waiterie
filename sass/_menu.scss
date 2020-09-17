@@ -1,65 +1,54 @@
-#menu {
-    @include dimension(90%, auto);
+.menu {
     margin: auto;
   }
   
   #filter_Container {
     top: 100px;
     position: sticky;
-    background-color: $bc;
+    // background-color: $bc;
   }
   
   .item_container {
     overflow: hidden;
-    @include dimension(100%, auto);
   }
+
   .menu_item {
-    @include dimension(100%, auto);
-    float: left;
     background-color: white;
     border-radius: 12px;
-    line-height: 20px;
-    text-align: center;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    display: none; /* Hidden by default */
+    padding: 10px;
   }
   
   .menu_img_container {
-    @include dimension(40%, auto);
     border: 1px solid red;
-    float: left;
   }
   
   .description {
-    @include dimension(60%,auto);
     border: 1px solid red;
-    float: right;
-    max-width: 140px;
   }
   
   .menu_item_heading {
-    @include font($ff, 18px, black);
+    text-align: center;
+    margin-top: 10px;
+    @include font($ff, 20px, black);
   }
   
   .menu_img {
     width: 100%;
     border: 1px solid blue;
     // min-height: 140px;
-    border-radius: 12px;
+    // border-radius: 12px;
   }
   
-  .price{
-    color:black;
-    font-family: $ff;
-    font-size: 20px;
-    float: left;
-    margin: 5px;
+  // .item_price{
+  //   color:black;
+  //   font-family: $ff;
+  //   font-size: 20px;
+  //   float: left;
+  //   margin: 5px;
   
-  }
+  // }
   
   .item_add_button {
-    float: right;
     margin: 5px;
     padding: 5px 10px;
   }

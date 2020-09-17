@@ -1,6 +1,8 @@
 @media screen and (max-width: 425px) {
 
-
+  .promotions:first-child{
+    display: none;
+  }
 
 .col-1 {
     width: 100%/12 * 1;

@@ -1,62 +1,23 @@
 @media screen and (min-width: 1026px) {
-  #cart {
-    @include dimension(50%,75vh);
+ 
+
+
+  .promotions{
+    margin: 1%;
+
+    .promotion_img{
+    border-radius: 12px;
   }
-  
-  
-  .flex_center {
-    justify-content: flex-end;
-    margin-right: 50px;
   }
+ 
+
 
   .search_bar {
     margin-right: 50px;
   }
 
-  #promotions {
-    @include dimension(77%, auto);
-    margin-top: 120px;
-    margin-left: 1%;
 
-    .promotion_img {
-      border-radius: 12px;
-      max-height: 50vh;
-    }
-  }
-
-  #cart {
-    right: 1%;
-  }
-
-  #menu {
-    @include dimension(77%, auto);
-    margin: 10px 0px 0 20px;
-  }
-  .menu_item {
-    @include dimension(32%, auto);
-  }
-
-
-  // #cart {
-  //   @include dimension(20%, auto);
-  //   min-height: 250px;
-  //   top: 120px;
-  //   right: 20px;
-  //   position: fixed;
-  //   float: right;
-  //   border-radius: 12px;
-  //   border: 2px solid red;
   
-  //   .paynow_button {
-  //     width: 100%;
-  //     padding: 10px;
-  //     position: absolute;
-  //     bottom: 0;
-  //     left: 0;
-  //   }
-  // }
-
-
 
 
   .col-lg-1 {

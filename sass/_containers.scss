@@ -3,18 +3,20 @@
   justify-content: center;
 }
 
-.flex_center{
+.flex_center {
   display: flex;
   justify-content: center;
 }
 
-.flex_bottom
-{
+.flex_row_wrap{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex_end {
   display: flex;
   justify-content: flex-end;
 }
-
-
 
 .row {
   @include dimension(100%, auto);
@@ -22,7 +24,6 @@
 
 .col {
   float: left;
-  min-height: 100px;
 }
 
 // clears the float after row
@@ -31,5 +32,3 @@
   display: table;
   content: "";
 }
-
-

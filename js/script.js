@@ -6,43 +6,49 @@ $(document).ready(function () {
 
   $('.ordernow_button').click(function () {
     $('#home').show();
-    $('#menu').show();
-    $('#promotions').show();
+    $('.menu').show();
+    $('.promotion_container').show();
     $('.cart_container').show();
     $('.Welcome_page').hide();
     $('.cart_txt').hide();
     $('#cart').hide();
   });
 
-  $('.profile').click(function () {
+  $('.qr_code_btn').click(function () {
     $('#home').hide();
-    $('.welcome_page').show();
+    $('.Welcome_page').show();
 
   });
 
   $('.cart_btn').click(function () {
+    $('.menu').hide();
     $('.search_bar').hide();
     $('.Welcome_page').hide();
     $('#menu').hide();
-    $('#promotions').hide();
+    $('.promotion_container').hide();
     $('.cart_txt').show();
     $('#cart').show();
 
   });
 
-  $('.menu').click(function () {
-    $('.search').show();
-    $('.Welcome_page').hide();
+  $('.menu_btn').click(function () {
+    $('.promotion_container').show();
+    $('.search_bar').show();
+    $('.menu').show();
+    $('#cart').hide();
     $('.cart_txt').hide();
 
   });
 
-  $('.favourite').click(function () {
-    $('.search').hide();
-    $('.Welcome_page').hide();
-    $('.cart_txt').hide();
+  // $('.favourite_btn').click(function () {
+  //   $('.search').hide();
+  //   $('.Welcome_page').hide();
+  //   $('.cart_txt').hide();
+  //   $('#cart').hide();
+  //   $('#menu').hide();
+  //   $('#promotions').hide();
 
-  });
+  // });
 
 
 
@@ -175,6 +181,7 @@ $(document).ready(function () {
         $('#price').append('<br>' + price);
         total += parseFloat(price);
         console.log(total);
+        document.getElementById('amount').innerHTML = '$' + total.toFixed(2);
       } //if ends
     } //for loop ends
 
@@ -185,8 +192,8 @@ $(document).ready(function () {
     $('#menu').hide();
   });
 
-  $('#calculate').on('click', function () {
-    document.getElementById('amount').innerHTML = '$' + total.toFixed(2);
+  $('.cart_btn').on('click', function () {
+    
   });
 
 });//document.ready() ends

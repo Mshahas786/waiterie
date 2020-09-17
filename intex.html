@@ -1,629 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Waiterite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Waiterite</title>
-</head>
+  <body>
+    <!--     welcome page      -->
+    <div class="Welcome_page">
+      <div class="logo row">
+        <img
+          class="logo_img"
+          src="images/restaurantlogo.png"
+          alt="Restaurent logo"
+        />
+      </div>
 
-<body>
-  <!--     welcome page      -->
-  <div class="Welcome_page">
-    <div class="logo row">
-      <img class="logo_img" src="images/restaurantlogo.png" alt="Restaurent logo" />
-    </div>
-
-    <h2>You are Seated at</h2>
-    <h1>TABLE 06</h1>
-
-    <div class="row flex_center">
-      <button type="button" class="ordernow_button">ORDER NOW</button>
-    </div>
-  </div>
-  <!--     welcome page end here !     -->
-
-  <div id="home">
-    <div class="head">
-      <h1 class="heading_txt cart_txt">Cart</h1>
+      <h2>You are Seated at</h2>
+      <h1>TABLE 06</h1>
 
       <div class="row flex_center">
-        <input class="search_bar col-11 col-sm-8 col-lg-4" type="text" placeholder="Search for your food here..!" />
+        <button type="button" class="ordernow_button">ORDER NOW</button>
       </div>
     </div>
-    <!-- head end here -->
-
-    <div id="promotions">
-      <img src="images/Promotion_img_1.jpg" alt="" class="promotion_img" />
-    </div>
-    <!-- promotion_containers end here -->
-
-    <div id="cart" class="cart">
-
-      <div class="item-price_container">
-
-        <div id="items" class="items">
-          <h3>Items</h3>
-        </div>
-
-        <div id="price" class="price">
-          <h3>Price</h3>
-        </div>
-
-      </div>
-
-      <button id="calculate">Calculate</button>
-
-      <div class="totalAmount">
-        <h3 class="">Total amount:</h3>
-        <span id="amount" class=""> 0.00</span>
-      </div>
-
-      <div class="button_container">
-        <button class="paynow_button">PAY NOW</button>
-      </div>
-    </div>
-    <!-- cart_container end here -->
-
-    <div id="menu">
-
-      <div id="filter_Container">
-        <button class="btn active" onclick="filterSelection('allmenu')">
-          All Menu
-        </button>
-        <button class="btn" onclick="filterSelection('pastas')">
-          Pastas
-        </button>
-        <button class="btn" onclick="filterSelection('vegan')">Vegan</button>
-        <button class="btn" onclick="filterSelection('pizzas')">
-          Pizzas
-        </button>
-        <button class="btn" onclick="filterSelection('steaks')">
-          Steaks
-        </button>
-        <button class="btn" onclick="filterSelection('drinks')">
-          Drinks
-        </button>
-        <button class="btn" onclick="filterSelection('desserts')">
-          Desserts
-        </button>
-      </div>
-      <!-- filter buttons end here-->
-
-      <div class="item_container">
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
-        </div>
-
-        <div class="menu_item pastas vegan">
-          <div class="menu_img_container">
-            <img class="menu_img" src="images/pennearabiatta.jpg" alt="Burger" />
-          </div>
-          <div class="description">
-            <h1 class="menu_item_heading">Penne Arabiatta</h1>
-            <p>Lorem ipsum dolor sit amet,</p>
-
-            <div class="price">
-              $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
-            </div>
-            <button id="PenneArabiatta" class="item_add_button" type="button" name="button">
-              ADD
-            </button>
-          </div>
+    <!--     welcome page end here !     -->
+
+    <div id="home">
+      <div class="head">
+        <h1 class="heading_txt cart_txt">Cart</h1>
+
+        <div class="row">
+          <input
+            class="search_bar col-11 col-sm-8 col-lg-4"
+            type="text"
+            placeholder="Search for your food here..!"
+          />
         </div>
       </div>
-      <!--container end here-->
-    </div>
-    <!-- menu_container end here -->
+      <!-- head end here -->
 
-    <div id="row">
+      <div class="promotion_container flex_center col-sm-11 col-lg-11">
+        <div class="promotions col-sm-6 col-lg-6">
+          <img src="images/Promotion_img_1.jpg" alt="" class="promotion_img" />
+        </div>
 
-      <div class="navbar">
-        <div class="navbar_icons"><img class="icon_img menu_btn" src="icons/menu.png" alt="menu" /></div>
-        <div class="navbar_icons"><img class="icon_img favourite_btn" src="icons/favourite.png" alt="favourite" /></div>
-        <div class="navbar_icons"><img class="icon_img cart_btn" src="icons/cart.png" alt="cart" /></div>
-        <div class="navbar_icons"><img class="icon_img profile_btn" src="icons/profile.png" alt="profile" /></div>
+        <div class="promotions col-sm-6 col-lg-6">
+          <img src="images/Promotion_img_1.jpg" alt="" class="promotion_img" />
+        </div>
+      </div>
+      <!-- promotion_container end here -->
 
+      <div id="cart" class="row clearfix  cart col-11 col-sm-9 col-lg-5">
+        
+        <div class="row top flex_center">
+
+        <div id="items" class="items top col col-8 col-sm-8 col-lg-8">Items</div>
+        
+        <div id="price" class="price top col col-2 col-sm-2 col-lg-2">Price</div>
+        
+      </div>
+
+        <div class="row flex_center">
+          <h3 class="col col col-8 col-sm-8 col-lg-8">Total amount:</h3>
+          <div id="amount" class="amount col col-2 col-sm-2 col-lg-2">0.00</div>
+        </div>
+
+        <div class="button_container">
+          <button class="paynow_button">PAY NOW</button>
+        </div>
+      </div>
+      <!-- cart_container end here -->
+
+      <div class="menu col-12 col-sm-11 col-lg-11">
+        <div id="filter_Container">
+          <button class="btn active" onclick="filterSelection('allmenu')">
+            All Menu
+          </button>
+          <button class="btn" onclick="filterSelection('pastas')">
+            Pastas
+          </button>
+          <button class="btn" onclick="filterSelection('vegan')">Vegan</button>
+          <button class="btn" onclick="filterSelection('pizzas')">
+            Pizzas
+          </button>
+          <button class="btn" onclick="filterSelection('steaks')">
+            Steaks
+          </button>
+          <button class="btn" onclick="filterSelection('drinks')">
+            Drinks
+          </button>
+          <button class="btn" onclick="filterSelection('desserts')">
+            Desserts
+          </button>
+        </div>
+        <!-- filter buttons end here-->
+
+        <div class="item_container row">
+          <div
+            class="menu_item flex_center col col-12 col-sm-6 col-lg-3 pastas vegan"
+          >
+            <div class="menu_img_container col col-5 col-sm-5 col-lg-5">
+              <img
+                class="menu_img"
+                src="images/pennearabiatta.jpg"
+                alt="penne Arabiatta"
+              />
+            </div>
+            <div class="description col col-7 col-sm-7 col-lg-7">
+              <h1 class="menu_item_heading">Penne Arabiatta</h1>
+              <p style="margin: 5%">
+                Sautéed Mushrooms, Red Onions, Red Capsicum, Roasted Garlic, Red
+                Chilli And Pomodoro Sauce.
+              </p>
+
+              <div class="item_price">
+                $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
+              </div>
+
+              <button
+                id="PenneArabiatta"
+                class="item_add_button"
+                type="button"
+                name="button"
+              >
+                ADD
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="menu_item flex_center col col-12 col-sm-6 col-lg-3 pastas vegan"
+          >
+            <div class="menu_img_container col col-5 col-sm-5 col-lg-5">
+              <img
+                class="menu_img"
+                src="images/pennearabiatta.jpg"
+                alt="penne Arabiatta"
+              />
+            </div>
+            <div class="description col col-7 col-sm-7 col-lg-7">
+              <h1 class="menu_item_heading">Penne Arabiatta</h1>
+              <p style="margin: 5%">
+                Sautéed Mushrooms, Red Onions, Red Capsicum, Roasted Garlic, Red
+                Chilli And Pomodoro Sauce.
+              </p>
+
+              <div class="item_price">
+                $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
+              </div>
+
+              <button
+                id="PenneArabiatta"
+                class="item_add_button"
+                type="button"
+                name="button"
+              >
+                ADD
+              </button>
+            </div>
+          </div>
+
+          <div
+            class="menu_item flex_center col col-12 col-sm-6 col-lg-3 pastas vegan"
+          >
+            <div class="menu_img_container col col-5 col-sm-5 col-lg-5">
+              <img
+                class="menu_img"
+                src="images/pennearabiatta.jpg"
+                alt="penne Arabiatta"
+              />
+            </div>
+            <div class="description col col-7 col-sm-7 col-lg-7">
+              <h1 class="menu_item_heading">Penne Arabiatta</h1>
+              <p style="margin: 5%">
+                Sautéed Mushrooms, Red Onions, Red Capsicum, Roasted Garlic, Red
+                Chilli And Pomodoro Sauce.
+              </p>
+
+              <div class="item_price">
+                $<span id="pennearabiattaprice" class="itemPrice">10.00</span>
+              </div>
+
+              <button
+                id="PenneArabiatta"
+                class="item_add_button"
+                type="button"
+                name="button"
+              >
+                ADD
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--container end here-->
+      </div>
+      <!-- menu_container end here -->
+
+      <div id="row">
+        <div class="navbar">
+          <div class="navbar_icons">
+            <img
+              class="icon_img menu_btn"
+              src="icons/table_menu.png"
+              alt="menu"
+            />
+          </div>
+
+          <div class="navbar_icons">
+            <img class="icon_img cart_btn" src="icons/bag.png" alt="cart" />
+          </div>
+          <div class="navbar_icons">
+            <img
+              class="icon_img qr_code_btn"
+              src="icons/qr_code.png"
+              alt="profile"
+            />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <!--home section end here -->
+    <!--home section end here -->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
-    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>

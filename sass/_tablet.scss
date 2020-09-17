@@ -1,10 +1,13 @@
 @media screen and (min-width: 426px) and (max-width: 1025px) {
-  #cart {
-    @include dimension(70%,75vh);
-  }
-  .menu_item {
-    @include dimension(49%, auto);
-  }
+
+  .promotions{
+  margin: 1%;
+
+  .promotion_img{
+  border-radius: 12px;
+}
+}
+
 
 
 
