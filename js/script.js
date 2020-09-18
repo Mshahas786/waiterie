@@ -10,7 +10,6 @@ $(document).ready(function () {
     $('.footer').show();
     $('.search_bar').show();
     $('.promotion_container').show();
-    $('.cart_container').show();
     $('.Welcome_page').hide();
     $('.cart_txt').hide();
     $('#cart').hide();
@@ -42,6 +41,12 @@ $(document).ready(function () {
 
   });
 
+  // $('#cartIcon').click(function () {
+  //   console.log('clicked');
+  //   $('#cart').show();
+  //   $('#menu').hide();
+  // });
+
   // $('.favourite_btn').click(function () {
   //   $('.search').hide();
   //   $('.Welcome_page').hide();
@@ -55,40 +60,6 @@ $(document).ready(function () {
 
 
 }); //end here
-
-
-
-
-
-// var slideshow = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("promotion_img");
-//   var dots = document.getElementsByClassName("dot");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";  
-//   }
-//   slideshow++;
-//   if (slideshow > slides.length) {slideshow = 1}    
-//   for (i = 0; i < dots.length; i++) {
-//     dots[i].className = dots[i].className.replace(" active", "");
-//   }
-//   slides[slideshow-1].style.display = "block";  
-//   dots[slideshow-1].className += " active";
-//   setTimeout(showSlides, 2000); // Change image every 2 seconds
-// }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -142,13 +113,8 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
-
-
 ///////////////// cart section /////////////////////////////////////////////////////////////////////////
 
-console.log('js');
-
-// $('#cart').hide();
 
 var total = 0; //initializing the numeric variable
 
@@ -187,15 +153,7 @@ $(document).ready(function () {
       } //if ends
     } //for loop ends
 
-  }); //.menu-button
-  $('#cartIcon').click(function () {
-    console.log('clicked');
-    $('#cart').show();
-    $('#menu').hide();
   });
 
-  $('.cart_btn').on('click', function () {
-    
-  });
 
 });//document.ready() ends
