@@ -67,7 +67,8 @@ button {
 
 #filter_Container {
   top: 100px;
-  position: sticky; }
+  position: sticky;
+  background-color: #cfcfcf; }
 
 .item_container {
   overflow: hidden; }
