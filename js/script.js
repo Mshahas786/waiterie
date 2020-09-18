@@ -7,6 +7,7 @@ $(document).ready(function () {
   $('.ordernow_button').click(function () {
     $('#home').show();
     $('.menu').show();
+    $('.footer').show();
     $('.search_bar').show();
     $('.promotion_container').show();
     $('.cart_container').show();
