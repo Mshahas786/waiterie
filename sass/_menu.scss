@@ -1,56 +1,49 @@
 .menu {
+    @include dimension(90%,auto);
     margin: auto;
   }
   
   #filter_Container {
     top: 100px;
+    margin-bottom: 5px;
     position: sticky;
-    background-color: $bc;
-  }
-  
-  .item_container {
-    overflow: hidden;
+    background-color:$bc;
   }
 
+
   .menu_item {
-    background-color: white;
+    @include dimension(100%,auto);
     border-radius: 12px;
-    padding: 10px;
+    background-color: white;
+    margin: 5px;
   }
-  
-  .menu_img_container {
-    border: 1px solid red;
-  }
-  
-  .description {
-    border: 1px solid red;
-  }
+
   
   .menu_item_heading {
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0px;
     @include font($ff, 20px, black);
   }
   
   .menu_img {
     width: 100%;
-    border: 1px solid blue;
-    // min-height: 140px;
-    // border-radius: 12px;
+    border-radius: 12px;
+    object-fit: cover;
   }
   
-  // .item_price{
-  //   color:black;
-  //   font-family: $ff;
-  //   font-size: 20px;
-  //   float: left;
-  //   margin: 5px;
+  .item_price{
+    color:black;
+    font-family: $ff;
+    font-size: 20px;
+    float: left;
+    margin: 5px;
   
-  // }
+  }
   
   .item_add_button {
     margin: 5px;
-    padding: 5px 10px;
+    float: right;
+    padding: 5px;
   }
 
   /* The "show" class is added to the filtered elements */

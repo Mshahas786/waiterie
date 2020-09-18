@@ -8,6 +8,9 @@
 }
 }
 
+.menu_item {
+  @include dimension(48%,auto);
+}
 
 
 
