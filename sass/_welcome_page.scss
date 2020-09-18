@@ -29,7 +29,11 @@
   
   } // Welcome_page end !
 
-  
+  body {
+    @include dimension(100%, 100vh);
+    background-color: $bc;
+  }
+
   .head {
     @include dimension(100%, 100px);
     background-color: $primary;
@@ -44,7 +48,7 @@
     padding-top: 40px;
     letter-spacing: 2px;
   }
-  
+
   
   
   
